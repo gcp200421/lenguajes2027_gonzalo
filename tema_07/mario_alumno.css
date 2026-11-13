@@ -1,0 +1,283 @@
+
+/* =========================================
+   1. SELECTOR UNIVERSAL
+   Selecciona TODOS los elementos de la página.
+   ========================================= */
+
+
+/* =========================================
+   2. SELECTOR DE ELEMENTO
+   Selecciona todos los elementos <p>.
+   ========================================= */
+
+   
+
+
+/* =========================================
+   3. SELECTOR DE CLASE
+   Selecciona los elementos con class="contenedor".
+   ========================================= */
+
+
+
+/* =========================================
+   4. SELECTOR DE IDENTIFICADOR (ID)
+   Selecciona el elemento con id="inicio".
+   ========================================= */
+
+
+
+
+/* =========================================
+   5. SELECTOR DE AGRUPACIÓN
+   Aplica los mismos estilos a <h1> y <p>.
+   ========================================= */
+
+  
+
+/* =========================================
+   6. SELECTOR DESCENDIENTE
+   Selecciona TODOS los <p> que estén dentro
+   de cualquier <div>, aunque haya otros
+   elementos entre el div y el párrafo.
+   ========================================= */
+
+
+
+
+/* =========================================
+   7. SELECTOR DE HIJO DIRECTO
+   Selecciona los <p> cuyo padre inmediato
+   sea un <div>.
+   
+   NOTA: para verlo funcionar en esta página,
+   debe existir un <p> directamente dentro
+   de un <div>.
+   ========================================= */
+
+  
+
+/* =========================================
+   8. SELECTOR DE ELEMENTO + CLASE
+   Selecciona únicamente los <div> que tengan
+   class="contenedor".
+   Es más específico que .contenedor.
+   ========================================= */
+
+
+
+/* =========================================
+   ESTILOS ADICIONALES PARA LA WEB DE MARIO
+   ========================================= */
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 24px 16px;
+    background: #b3a4f0;
+    color: #ebf1f4;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
+
+.contenedor {
+    width: min(100%, 1100px);
+    margin: 0 auto;
+}
+
+header,
+nav,
+main,
+section,
+article,
+figure,
+aside,
+footer {
+    border-radius: 12px;
+}
+
+header {
+    padding: 28px;
+    background: #370a85;
+    border: 3px solid #e8e5e0;
+    text-align: center;
+}
+
+header p,
+footer p {
+    margin-bottom: 0;
+}
+
+nav {
+    margin: 16px 0;
+    padding: 14px;
+    background: #df0f13;
+    border: 3px solid #e3e9eb;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    margin: 4px;
+    padding: 7px 12px;
+    border-radius: 20px;
+    background: #370a85;
+    color: #edf2f4;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    background: #5294ac;
+    color: #d5b5b5;
+}
+
+main {
+    padding: 16px;
+    background: #370a85;
+    border: 3px solid #e6edf0;
+}
+
+main > p:first-of-type {
+    margin: 0 0 16px;
+    padding: 12px 16px;
+    background: #fff;
+    border-left: 5px solid #f9fafa;
+}
+
+section {
+    margin: 18px 0;
+    padding: 18px;
+    border: 3px solid white;
+    scroll-margin-top: 16px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+#mario {
+    background: #c44f15;
+}
+
+#peach {
+    background: #e747cc;
+}
+
+#yoshi {
+    background: #56ed4e;
+}
+
+#bowser {
+    background: #243e02;
+}
+
+
+
+article {
+    margin: 14px 0;
+    padding: 14px;
+    background: #fff;
+    border: 2px solid white;
+    box-shadow: 0 3px 8px rgba(38, 50, 56, 0.1);
+    text-align: center;
+}
+
+article figure,
+article > div:first-of-type {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    text-align: left;
+}
+
+article figure {
+    padding: 8px;
+    background: #f1f5f4;
+    border: 2px solid #78909c;
+}
+
+article img {
+    display: block;
+    width:100%;
+    height: 230px;
+    border-radius: 7px;
+    object-fit: cover;
+}
+
+figcaption {
+    padding: 6px 2px 0;
+    color: #455a64;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+article > div:first-of-type {
+    padding: 12px 18px;
+}
+
+article > div:first-of-type h3 {
+    margin-top: 0;
+    color: #244c5a;
+}
+
+article > div:first-of-type p:last-child {
+    margin-bottom: 0;
+}
+
+aside {
+    margin: 22px 0;
+    padding: 22px;
+    background: #ffc5a8;
+    border: 3px dashed #cc6846;
+    color: #6c301d;
+    font-size: 1.35rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    margin-top: 16px;
+    padding: 18px;
+    background: #684c84;
+    border: 3px solid #8668a3;
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 12px 8px;
+    }
+
+    header,
+    main {
+        padding: 14px;
+    }
+
+    section {
+        padding: 12px;
+    }
+
+    article figure,
+    article > div:first-of-type {
+        display: block;
+        width: 100%;
+    }
+
+    article > div:first-of-type {
+        padding: 12px 4px 2px;
+    }
+
+    article img {
+        height: 210px;
+    }
+}

@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gonzalo Carrión">
+    <title>Conceptos CSS</title>
+
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #a3c4e6;
+            color: #020d1f;
+            padding: 20px;
+        }
+
+        .contenedor {
+            width: 100%;
+            text-align: center;
+        }
+
+        .caja {
+            display: inline-block;
+            vertical-align: top;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 40%;
+            margin: 10px;
+            text-align: left;
+        }
+
+        h2 {
+            color: #2563eb;
+            font-size: 20px;
+        }
+
+        p {
+            color: #475569;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        ul {
+            color: #1e3a8a;
+            font-size: 18px;
+        }
+
+        .ejemplo1 {
+            width: 200px;
+            padding: 15px;
+            border: 5px solid blue;
+            margin: 10px 0;
+            background-color: #eff6ff;
+        }
+
+        .ejemplo2 {
+            width: 250px;
+            height: 70px;
+            overflow: auto;
+            border: 2px solid red;
+            padding: 10px;
+            background-color: #fef2f2;
+        }
+
+        .ejemplo3 {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 20px;
+            border: 6px solid green;
+            background-color: #ecfdf5;
+        }
+
+        .ejemplo4_1 {
+            display: block;
+            background-color: rgb(211, 97, 107);
+            padding: 8px;
+            margin-bottom: 6px;
+        }
+
+        .ejemplo4_2 {
+            display: inline;
+            background-color: rgb(209, 101, 157);
+            padding: 4px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="caja">
+            <h2>1. Box Model</h2>
+
+            <p>
+                El Box Model define cómo se estructuran los elementos HTML en la página. Está formado por cuatro partes: contenido, padding, border y margin.
+            </p>
+
+            <div class="ejemplo1"></div>
+        </div>
+
+        <div class="caja">
+            <h2>2. Propiedad overflow</h2>
+
+            <p>
+                La propiedad overflow determina qué ocurre cuando el contenido supera el tamaño de su contenedor. Puede utilizar valores como visible, hidden, scroll o auto.
+            </p>
+
+            <div class="ejemplo2">
+                Texto largo que excede los 70px de alto. Gracias a overflow: auto se activa automáticamente la barra de desplazamiento.
+            </div>
+        </div>
+
+        <div class="caja">
+            <h2>3. Propiedad box-sizing</h2>
+
+            <p>
+                 Define cómo se calcula el ancho y alto de un elemento. Con border-box, el padding y el border se incluyen en las dimensiones.
+            </p>
+
+            <div class="ejemplo3">
+                box-sizing: border-box ajusta todo el tamaño sin romper el diseño.
+            </div>
+        </div>
+
+        <div class="caja">
+            <h2>4. Propiedad display</h2>
+
+            <p>
+                Indica cómo se muestra un elemento en la página. Algunos valores son block, inline e inline-block.
+            </p>
+
+            <div class="ejemplo4_1">display: block (Fila completa)</div>
+
+            <span class="ejemplo4_2">display: inline (Fila parcial)</span>
+            
+        </div>
+
+    </div>
+
+</body>
+</html>
+
